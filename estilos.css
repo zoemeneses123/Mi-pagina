@@ -1,0 +1,283 @@
+* {margin: 0;
+    padding: 0;
+}
+
+body{background-image:
+		/* Pink lines */
+		linear-gradient(
+		    -116deg,
+			  transparent 40%,
+			  hsl(0,80%,80%) 0,
+			  hsl(0,80%,80%) 42%,
+			  transparent 42%
+		    ),
+		linear-gradient(
+		    116deg,
+			  transparent 41%,
+			  hsl(0,80%,80%) 0,
+			  hsl(0,80%,80%) 43%,
+			  transparent 43%
+		    ),
+		
+		
+		/* Black lines */
+		linear-gradient(
+		    -116deg,
+			  transparent 40%,
+			  hsl(0,0%,40%) 0,
+			  hsl(0,0%,40%) 42%,
+			  transparent 42%
+		    ),
+		linear-gradient(
+		    116deg,
+			  transparent 41%,
+			  hsl(0,0%,40%) 41%,
+			  hsl(0,0%,40%) 43%,
+			  transparent 43%
+		    ),
+		
+		/* Black diamonds */
+		linear-gradient(
+		    -115deg,
+			  hsl(0,0%,40%) 16.5%,
+			  transparent 0
+		    ),
+		linear-gradient(
+		    -65deg,
+			  hsl(0,0%,40%) 16.5%,
+			  transparent 0
+		    ),
+		linear-gradient(
+		    115deg,
+			  hsl(0,0%,40%) 16.5%,
+			  transparent 0
+		    ),
+		linear-gradient(
+		    65deg,
+			  hsl(0,0%,40%) 16.5%,
+			  transparent 0
+		    ),
+		
+		/* Pink diamonds */
+		linear-gradient(
+		    -115deg,
+			  hsl(0,80%,80%) 16.5%,
+			  transparent 0
+		    ),
+		linear-gradient(
+		    -65deg,
+			  hsl(0,80%,80%) 16.5%,
+			  transparent 0
+		    ),
+		linear-gradient(
+		    115deg,
+			  hsl(0,80%,80%) 16.5%,
+			  transparent 0
+		    ),
+		linear-gradient(
+		    65deg,
+			  hsl(0,80%,80%) 16.5%,
+			  transparent 0
+		    );
+	background-size: 
+		/* Pink lines */
+		8em 8em,
+		8em 8em,
+		
+		/* Black Lines */
+		8em 8em,
+		8em 8em,
+		
+		/* Black diamonds */
+		8em 8em,
+		8em 8em,
+		8em 8em,
+		8em 8em,
+		
+		/* Pink diamonds */
+		8em 8em,
+		8em 8em,
+		8em 8em,
+		8em 8em;
+	background-position: 
+		/* Pink lines */
+		3em -8em,
+		-3em -8em,
+		
+		/* Black Lines */
+		-9em 8em,
+		9em 8em,
+		
+		/* Black diamonds */
+		0, 0, 0, 0,
+		
+		/* Pink diamonds */
+		4em, 4em, 4em, 4em;
+        font-family: 'Patrick Hand', cursive;
+	}
+
+    /* header */
+
+    .title h1 {
+        padding: 20px 0;
+        text-align: center;
+        font-size: xx-large;
+		text-transform: uppercase;
+		color: aliceblue;
+		text-shadow: rgb(63, 63, 63);
+    }
+
+    .container {
+        background-color: hsl(0,80%,80%);
+        width: 90%;
+        max-width: 1000px;
+        margin: 1.6em auto;
+
+        display: grid;
+        gap: 1.6em;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .container > .header,
+	.container > .content,
+    .container > .div_uno,
+    .container > .div_dos,
+    .container > .div_tres,
+    .container > .div_cuatro,
+    .container > .div_cinco,
+    .container > .div_seis,
+	.container > .footer{
+        background-color: rgb(255, 255, 255);
+        padding: 15px;
+        border: 2px solid black;
+		
+    }
+
+    .container .header,
+	.container .footer{
+		grid-column: 1/6;
+        background-color: hsl(0,0%,40%);
+        color: black;
+    }
+
+	.container > .content {
+		grid-column: span 4;
+	}
+
+
+	.content > .div_uno {
+		float: left;
+		background-color:hsl(0,80%,80%) ;
+		border-radius: 5px;
+		padding: 10px;
+		width: 400px;
+		height: 300px;
+		margin: 25px;
+	}
+
+	.div_uno > .ima_fav {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		border-radius: 15px;
+	}
+
+	.content > .div_dos {
+		float: left;
+		background-color:hsl(0,80%,80%) ;
+		border-radius: 5px;
+		width: 400px;
+		height: 220px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 60px;
+		margin-top: 70px;
+		margin-left: 15px;
+		margin-right: 15px;
+		text-align: justify;
+	}
+
+	.div_dos h1 {
+		font-size: x-large;
+		text-align: center;
+	}
+
+	.content > .div_tres {
+		float: left;
+		background-color: hsl(0,80%,80%);
+		border-radius: 5px;
+		width: 400px;
+		height: 300px;
+		padding: 10px;
+		margin: 25px;
+		text-align: center;
+	}
+
+	.div_tres h1 {
+		font-size: x-large;
+		text-align: center;
+	}
+	.videoYT {
+		padding: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		display: block;
+	}
+
+	.content > .div_cuatro {
+		float: left;
+		background-color: hsl(0,80%,80%);
+		border-radius: 5px;
+		width: 400px;
+		height: 250px;
+		margin: 20px;
+		margin-top: 45px;
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+
+		
+	}
+
+	.content > .div_cinco {
+		float: left;
+		background-color: hsl(0,80%,80%);
+		border-radius: 5px;
+		width: 800px;
+		padding: 15px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.content > .div_seis {
+		float: left;
+		background-color: hsl(0,80%,80%);
+		border-radius: 5px;
+		width: 800px;
+		padding: 15px;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	.div_seis > .ima_HM {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		border-radius: 40px;
+		padding-bottom: 15px;
+		border: black 5px;
+	}
+
+	.div_seis h1 {
+		font-size: x-large;
+		text-align: center;
+		padding-bottom: 15px;
+	}
